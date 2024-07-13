@@ -7,7 +7,7 @@ It's just css with font-face declarations and respective font files, install and
 
 ## Why this package?
 
-- [@fontsource/noto-color-emoji][fontsource] does not work in Edge or Chrome, just in Safari.
+- [@fontsource/noto-color-emoji][fontsource] [does not work in Edge or Chrome, just in Safari][issue].
 - For color fonts, there are two competing standards (COLRv1 and OpenType-SVG),
   and none of them is supported in all browsers.
 - Chrome, Edge, and friends want COLRv1, Safari wants SVG, Firefox is ok with both of them.
@@ -33,6 +33,7 @@ If you're using vite or vite-based bundler, import this package in your css:
 @import '@infolektuell/noto-color-emoji';
 ```
 
+[issue]: https://github.com/fontsource/fontsource/issues/588
 [google fonts]: https://fonts.google.com/noto/specimen/Noto+Color+Emoji
 [fontsource]: https://fontsource.org/fonts/noto-color-emoji
 [new font-face syntax]: https://fullystacked.net/new-font-face-syntax/

@@ -1,20 +1,28 @@
 # Noto Color Emoji
 
-This package contains my solution to use Noto Color Emoji font in different browsers.
+[Demo page](https://infolektuell.github.io/noto-color-emoji/)
 
-- [@fontsource/noto-color-emoji][fontsource] does not seam to work in Edge or Chrome.
-- The woff2-fonts downloaded from [Google Fonts] do not work in safari browsers.
-- For color fonts, there are two competing standards (COLRv1 and OpenType-SVG), and none of them is supported in all browsers.
-- The [Google Fonts] files seem to be COLRv1.
-- I don't know what the [Fontsource] files contain, but they work in safari. Maybe OT-SVG?
+This npm package contains my solution to use Noto Color Emoji font in different browsers.
+It's just css with font-face declarations and respective font files, install and import it in vite projects and alike.
+
+## Why this package?
+
+- [@fontsource/noto-color-emoji][fontsource] does not work in Edge or Chrome, just in Safari.
+- For color fonts, there are two competing standards (COLRv1 and OpenType-SVG),
+  and none of them is supported in all browsers.
+- Chrome, Edge, and friends want COLRv1, Safari wants SVG, Firefox is ok with both of them.
+- [Google Fonts] dynamically generates the css containing compatible font-face declarations based on user agent.
+  But I want to host the files statically.
+- The fontsource package only ships font files with SVG tables, no COLRv1.
+- This package ships all needed font files of both types in woff2 format.
+  They were downloaded from [Google Fonts] using Firefox and Safari on Mac.
 - The css declarations in this package use the [New font-face syntax] with the `tech` function,
-  so browsers with COLRv1 support can load the google font files, whereas others can load the fontsource files.
-- The package ships all needed font files in woff2 format.
+  so browsers can decide to load either COLRv1 or SVG tables.
 
 ## Install
 
 ```sh
-npm i infolektuell/noto-color-emoji
+npm i @infolektuell/noto-color-emoji
 ```
 
 ## Usage
@@ -22,7 +30,7 @@ npm i infolektuell/noto-color-emoji
 If you're using vite or vite-based bundler, import this package in your css:
 
 ```css
-@import 'infolektuell/noto-color-emoji';
+@import '@infolektuell/noto-color-emoji';
 ```
 
 [google fonts]: https://fonts.google.com/noto/specimen/Noto+Color+Emoji

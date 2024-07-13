@@ -1,10 +1,16 @@
 {
-  "name": "noto-color-emoji",
+  "name": "@infolektuell/noto-color-emoji",
   "version": "0.1.0",
   "description": "Font files for Noto Color Emoji that work in all modern browsers",
   "main": "index.css",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite demo",
+    "build": "vite build demo",
+    "preview": "vite preview demo"
+  },
+  "devDependencies": {
+    "vite": "^5.3.1"
   },
   "repository": {
     "type": "git",
@@ -12,13 +18,19 @@
   },
   "keywords": [
     "color",
+    "css",
     "font",
-    "emoji"
+    "emoji",
+    "web"
   ],
-  "author": "",
+  "author": "Infolektuell <info@infolektuell.de>",
   "license": "OFL-1.1",
   "bugs": {
     "url": "https://github.com/infolektuell/noto-color-emoji/issues"
   },
-  "homepage": "https://github.com/infolektuell/noto-color-emoji#readme"
+  "homepage": "https://github.com/infolektuell/noto-color-emoji#readme",
+  "files": [
+    "files/*",
+    "index.css"
+  ]
 }

@@ -58,7 +58,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(./files/6.woff2) format(woff2) tech(color-COLRv1), url(./files/noto-color-emoji-0-406-normal.woff2) format(woff2) tech(color-SVG);
+  src: url(./files/6.woff2) format(woff2) tech(color-COLRv1), url(./files/noto-color-emoji-6-400-normal.woff2) format(woff2) tech(color-SVG);
   unicode-range: U+2615, U+fe0f, U+1f32d-1f330, U+1f336, U+1f33d, U+1f345-1f37f, U+1f382, U+1f52a, U+1f942-1f944, U+1f950-1f96f, U+1f99e, U+1f9aa, U+1f9c0-1f9cb, U+1fad0-1fadb;
 }
 /* [7] */

@@ -1,6 +1,6 @@
 # Noto Color Emoji
 
-[Demo page](https://infolektuell.github.io/noto-color-emoji/)
+[![npm version](https://badge.fury.io/js/@infolektuell%2Fnoto-color-emoji.svg)](https://badge.fury.io/js/@infolektuell%2Fnoto-color-emoji)
 
 This npm package contains my solution to use Noto Color Emoji font in different browsers.
 It's just css with font-face declarations and respective font files, install and import it in vite projects and alike.

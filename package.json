@@ -1,7 +1,7 @@
 {
   "name": "@infolektuell/noto-color-emoji",
   "version": "0.1.0",
-  "description": "Font files for Noto Color Emoji that work in all modern browsers",
+  "description": "Self-hosted Noto Color Emoji font across all modern browsers",
   "main": "index.css",
   "type": "module",
   "scripts": {
@@ -14,11 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/infolektuell/noto-color-emoji.git"
+    "url": "https://github.com/infolektuell/noto-color-emoji.git"
   },
   "keywords": [
+    "browser",
+    "Chrome",
     "color",
     "css",
+    "Edge",
+    "Firefox",
     "font",
     "emoji",
     "web"

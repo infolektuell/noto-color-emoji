@@ -1,7 +1,7 @@
 {
   "name": "@infolektuell/noto-color-emoji",
-  "version": "0.1.1",
-  "description": "Self-hosted Noto Color Emoji font across all modern browsers",
+  "version": "0.2.0",
+  "description": "Self-hosted Noto Color Emoji font for Chrome and Edge",
   "main": "index.css",
   "type": "module",
   "scripts": {

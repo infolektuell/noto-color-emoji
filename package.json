@@ -10,7 +10,7 @@
     "preview": "vite preview demo"
   },
   "devDependencies": {
-    "vite": "^5.3.4"
+    "vite": "^5.4.8"
   },
   "repository": {
     "type": "git",
